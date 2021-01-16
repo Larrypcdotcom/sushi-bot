@@ -172,7 +172,7 @@ def fetchData(name, pool):
     data.append({
         "timestamp": int(time.time()),
         "token0Balance": token0Reserve * userShare / totalSupply,
-        "token1Balance": token0Reserve * userShare / totalSupply,
+        "token1Balance": token1Reserve * userShare / totalSupply,
         "token0Price": prices[token0["id"]]["usd"],
         "token1Price": prices[token1["id"]]["usd"]
     })
